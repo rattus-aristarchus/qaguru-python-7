@@ -1,0 +1,5 @@
+pytest
+pypdf
+Pillow
+xlrd
+openpyxl
