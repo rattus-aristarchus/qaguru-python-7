@@ -1,11 +1,11 @@
 import os
 import pypdf
 
-from conftest import RESOURCES_DIR
+from conftest import RESOURCES_DIR, PDF_NAME
 
 
 def test_pdf():
-    pdf_path = os.path.join(RESOURCES_DIR, 'docs-pytest-org-en-latest.pdf')
+    pdf_path = os.path.join(RESOURCES_DIR, PDF_NAME)
     reader = pypdf.PdfReader(pdf_path)
     number_of_pages = len(reader.pages)
     first_page = reader.pages[0]

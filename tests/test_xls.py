@@ -1,10 +1,10 @@
 import xlrd
 import os
-from conftest import RESOURCES_DIR
+from conftest import RESOURCES_DIR, XLS_NAME
 
 
 def test_xls():
-    xls_path = os.path.join(RESOURCES_DIR, "file_example_XLS_10.xls")
+    xls_path = os.path.join(RESOURCES_DIR, XLS_NAME)
     book = xlrd.open_workbook(xls_path)
 
     print(f'Количество листов {book.nsheets}')

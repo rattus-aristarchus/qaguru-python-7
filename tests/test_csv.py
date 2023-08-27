@@ -1,11 +1,11 @@
 import csv
 import os
 
-from conftest import RESOURCES_DIR
+from conftest import RESOURCES_DIR, CSV_NAME
 
 
 def test_csv():
-    csv_path = os.path.join(RESOURCES_DIR, 'new_csv.csv')
+    csv_path = os.path.join(RESOURCES_DIR, CSV_NAME)
 
     with open(csv_path, 'w', newline='') as csv_file:
         csvwriter = csv.writer(csv_file, delimiter=';')
