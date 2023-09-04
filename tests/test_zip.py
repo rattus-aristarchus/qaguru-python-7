@@ -23,4 +23,4 @@ def test_zip():
         for name in names_in_zip:
             assert os.path.basename(name) in filenames
 
-        os.remove(zip_path)
+    os.remove(zip_path)
